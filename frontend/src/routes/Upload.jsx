@@ -1,8 +1,8 @@
-import UploadComponent from "../components/UploadComponent";
+import UploadComponent from '../components/UploadComponent';
 
 function Upload() {
   return(
-    <UploadComponent />
+    <UploadComponent/>
   )
 }
 

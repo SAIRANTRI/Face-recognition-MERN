@@ -5,6 +5,7 @@ import App from "./routes/App.jsx";
 import Home from './routes/Home.jsx';
 import Upload from './routes/Upload.jsx';
 import "./index.css";
+import Frame2 from './components/Frame2.jsx';
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/upload",
         element: <Upload />,
+      },
+      {
+        path: "/frame2",
+        element:  <Frame2/>
       },
     ],
   },
