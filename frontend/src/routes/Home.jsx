@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom';
+import HomeContent from '../components/HomeContent';
 
 function Home() {
-  return (
-    <div>
-      <h1>Home Page</h1>
-      <Link to="/upload">Go to Upload</Link>
-    </div>
-  );
+  return(
+    <HomeContent/>  
+  )
+  
 }
 
 export default Home;
