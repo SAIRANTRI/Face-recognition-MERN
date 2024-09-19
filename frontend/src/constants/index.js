@@ -1,12 +1,14 @@
+import Upload from "../routes/Upload";
+import Home from "../routes/Home";
 export const navLinks = [
   {
     id: "0",
     title: "Home",
-    url: "#home",
+    url: "/",
   },
   {
     id: "1",
-    title: "Download",
-    url: "#download",
+    title: "Upload",
+    url: "/Upload",
   },
 ];

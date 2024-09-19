@@ -1,7 +1,7 @@
 // components/Footer.js
 const Footer = () => {
   return (
-    <div className="border-t-[1px_solid_rgba(255,255,255,0.1)] flex flex-row justify-around p-[25px_0] w-full box-sizing-border bg-black absolute bottom-0">
+    <div className="border-t-[1px_solid_rgba(255,255,255,0.1)] flex flex-row justify-around p-[25px_0] w-full box-sizing-border bg-black bg-opacity-30 absolute bottom-0">
       <div className="flex flex-col box-sizing-border">
         <div className="inline-block break-words font-['Inter'] font-medium text-[12.8px] leading-[1.15] text-[#FFFFFF]">
           Product
