@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import HomeContent from '../components/HomeContent';
 
 function Home() {

@@ -11,7 +11,9 @@ const Header = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
+    <Link to = {"/"}>
       <img src={logo} alt="name" className="w-[124px] h-[30px]" style={{ filter: "invert(1)" }} />
+      </Link>
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (

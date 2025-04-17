@@ -11,8 +11,9 @@ function App() {
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         width: '100%',
-        height: '100vh',
-        overflow: 'hidden',
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
       }}
     >
       {/* Header stays at the top */}
@@ -20,7 +21,7 @@ function App() {
         <Header />
       </div>
 
-      <div className=" w-full flex justify-center">
+      <div className=" w-full flex flex-grow justify-center pb-0">
         <Outlet />
       </div>
 

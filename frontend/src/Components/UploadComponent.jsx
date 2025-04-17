@@ -101,7 +101,8 @@ export default function UploadComponent() {
                 <div className="rounded-[8px] bg-[linear-gradient(92.96deg,rgba(255,91,55,0.1),rgba(171,0,82,0.1))] m-[14px_0_13.5px_0] flex flex-row p-[7.5px_0_8.5px_16.1px] w-[114.1px] box-sizing-border">
                   <span
                     onClick={handleDownload} // Added onClick handler for download button
-                    className="m-[0_6.2px_0_0] break-words font-['Inter'] font-normal text-[14px] leading-[1.15] bg-[linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1))] text-[transparent] bg-clip-text cursor-pointer"
+                    
+                    className="m-[0_6.2px_0_0] break-words font-['Inter'] font-normal text-[14px] leading-[1.15] bg-[linear-gradient(rgba(255,255,255,0.1),rgba(255,255,255,0.1))]  bg-clip-text cursor-pointer text-[transparent]"
                   >
                     Download
                   </span>
