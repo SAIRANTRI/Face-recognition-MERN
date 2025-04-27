@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function LoginPage() {
   const [formData, setFormData] = useState({
+    username: "",
     email: "",
     password: "",
   });
@@ -32,6 +33,19 @@ export default function LoginPage() {
         </h2>
 
         <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <label htmlFor="username" className="text-gray-300 block mb-1 text-sm">Username</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              value={formData.username}
+              onChange={handleChange}
+              className="w-full p-2.5 rounded-md bg-gray-800 text-white focus:outline-none focus:ring-2 focus:ring-purple-500 text-sm"
+              required
+            />
+          </div>
+
           <div>
             <label htmlFor="email" className="text-gray-300 block mb-1 text-sm">Email</label>
             <input
