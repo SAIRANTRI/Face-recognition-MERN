@@ -7,6 +7,7 @@ import Upload from './routes/Upload.jsx';
 import "./index.css";
 import Signup from './routes/Signup.jsx';
 import Login from './routes/Login.jsx';
+import ProfilePage from './Components/ProfilePage.jsx';   
 
 const router = createBrowserRouter([
   {
@@ -25,7 +26,11 @@ const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
-      }
+      },
+      {
+        path: "/profile",
+        element: <ProfilePage />,
+      },
     ],
   },
 ]);

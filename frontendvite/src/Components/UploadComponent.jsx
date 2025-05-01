@@ -24,7 +24,7 @@ export default function UploadComponent() {
     if (images.length > 0) {
       localStorage.setItem("uploadedImages", JSON.stringify(images));
     }
-  }, [images]);
+  }, []);
 
   const handleImageUpload = async (event) => {
     const files = Array.from(event.target.files);
@@ -148,7 +148,7 @@ export default function UploadComponent() {
           <p className="text-sm text-gray-400">or</p>
           <button
             onClick={handleLocalUpload}
-            className="mt-4 px-6 py-2 bg-purple-600 rounded-lg hover:bg-purple-700 transition"
+            className="mt-4 px-6 py-2 bg-gradient-to-r from-[#551f2b] via-[#3a1047] to-[#1e0144] hover:from-[#6a2735] hover:via-[#4d1459] hover:to-[#2a0161] text-white rounded-md transition-all duration-300 shadow-[0_0_15px_5px_rgba(0,0,0,0.7)] text-sm font-medium"
           >
             Browse Files
           </button>
@@ -204,7 +204,7 @@ export default function UploadComponent() {
                 <div className="text-lg font-semibold">Zip File Name</div>
                 <span className="text-sm text-pink-100/80">Size -- Number of images</span>
               </div>
-              <div className="rounded bg-pink-500/10 flex items-center justify-center px-4 py-2 cursor-pointer">
+              <div className="rounded bg-gradient-to-r from-[#551f2b] via-[#3a1047] to-[#1e0144] hover:from-[#6a2735] hover:via-[#4d1459] hover:to-[#2a0161] flex items-center justify-center px-4 py-2 cursor-pointer transition-all duration-300 shadow-[0_0_15px_5px_rgba(0,0,0,0.7)]">
                 <span onClick={handleDownload} className="text-gray-200 mr-2 text-sm">
                   Download
                 </span>
