@@ -20,6 +20,13 @@ const photoSchema = new mongoose.Schema(
       type: Date,
       default: Date.now,
     },
+    referenceId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'Photo',  // Link to the reference image, if it's a pool image
+      required: function() {
+        return this.imageType === 'pool';  // Only required if the imageType is pool
+      },
+    },
   },
   {
     timestamps: true, // Automatically adds createdAt and updatedAt fields
