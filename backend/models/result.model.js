@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 
 const resultSchema = new mongoose.Schema(
   {
@@ -7,27 +7,40 @@ const resultSchema = new mongoose.Schema(
       ref: "User",
       required: true,
     },
-    photos: [
+    referenceImage: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Photo", // Reference to the Photo model, not the image itself
+      required: true,
+    },
+    poolImages: [
       {
         type: mongoose.Schema.Types.ObjectId,
-        ref: "Photo",
+        ref: "Photo", // Reference to the Photo model
         required: true,
       },
     ],
-    label: {
-      type: String,
-      required: true,
-    },
-    confidence: {
-      type: Number, 
-      required: false,
-    },
+    matches: [
+      {
+        poolImage: {
+          type: mongoose.Schema.Types.ObjectId,
+          ref: "Photo", // Reference to the Photo model
+          required: true,
+        }, 
+        matchedFace: {
+          type: String, // Unique identifier for the matched face, like "Face_1"
+        },
+        confidence: {
+          type: Number,
+          required: true,
+        },
+      },
+    ],
   },
   {
-    timestamps: true,
+    timestamps: true, // Track when the result was created/updated
   }
 );
 
-const Result = mongoose.model("Result", resultSchema);
+const Result = mongoose.model("Result", resultSchema);   
 
-export default Result;
+export default Result; 
